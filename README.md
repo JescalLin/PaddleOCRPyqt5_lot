@@ -7,4 +7,4 @@ https://github.com/PaddlePaddle/PaddleOCR
 demo
 <br/>
 
-![image](https://github.com/JescalLin/PaddleOCR_Pyqt5/blob/master/demo/demo.gif)
+![image](https://github.com/JescalLin/PaddleOCR_Pyqt5/blob/main/demo/demo.gif)
