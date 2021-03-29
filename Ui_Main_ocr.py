@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'd:\PaddleOCR\Main_ocr.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1008, 886)
+        font = QtGui.QFont()
+        font.setFamily("微軟正黑體")
+        font.setPointSize(16)
+        MainWindow.setFont(font)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox.setGeometry(QtCore.QRect(10, 10, 991, 501))
+        self.groupBox.setObjectName("groupBox")
+        self.pushButton_pic = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_pic.setGeometry(QtCore.QRect(10, 40, 320, 40))
+        self.pushButton_pic.setObjectName("pushButton_pic")
+        self.lineEdit_pic = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_pic.setGeometry(QtCore.QRect(10, 80, 320, 40))
+        self.lineEdit_pic.setObjectName("lineEdit_pic")
+        self.label_pic = QtWidgets.QLabel(self.groupBox)
+        self.label_pic.setGeometry(QtCore.QRect(10, 120, 320, 360))
+        self.label_pic.setAutoFillBackground(True)
+        self.label_pic.setFrameShape(QtWidgets.QFrame.Box)
+        self.label_pic.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label_pic.setText("")
+        self.label_pic.setScaledContents(True)
+        self.label_pic.setObjectName("label_pic")
+        self.label_box = QtWidgets.QLabel(self.groupBox)
+        self.label_box.setGeometry(QtCore.QRect(330, 120, 320, 360))
+        self.label_box.setAutoFillBackground(True)
+        self.label_box.setFrameShape(QtWidgets.QFrame.Box)
+        self.label_box.setText("")
+        self.label_box.setScaledContents(True)
+        self.label_box.setObjectName("label_box")
+        self.pushButton_box = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_box.setGeometry(QtCore.QRect(330, 40, 320, 40))
+        self.pushButton_box.setObjectName("pushButton_box")
+        self.lineEdit_box = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_box.setGeometry(QtCore.QRect(330, 80, 320, 40))
+        self.lineEdit_box.setObjectName("lineEdit_box")
+        self.pushButton_paper = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_paper.setGeometry(QtCore.QRect(650, 40, 320, 40))
+        self.pushButton_paper.setObjectName("pushButton_paper")
+        self.label_paper = QtWidgets.QLabel(self.groupBox)
+        self.label_paper.setGeometry(QtCore.QRect(650, 120, 320, 360))
+        self.label_paper.setAutoFillBackground(True)
+        self.label_paper.setFrameShape(QtWidgets.QFrame.Box)
+        self.label_paper.setText("")
+        self.label_paper.setScaledContents(True)
+        self.label_paper.setObjectName("label_paper")
+        self.lineEdit_paper = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_paper.setGeometry(QtCore.QRect(650, 80, 320, 40))
+        self.lineEdit_paper.setObjectName("lineEdit_paper")
+        self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_2.setGeometry(QtCore.QRect(10, 520, 991, 361))
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.pushButton_lot = QtWidgets.QPushButton(self.groupBox_2)
+        self.pushButton_lot.setGeometry(QtCore.QRect(10, 30, 971, 41))
+        self.pushButton_lot.setObjectName("pushButton_lot")
+        self.plainTextEdit_log = QtWidgets.QPlainTextEdit(self.groupBox_2)
+        self.plainTextEdit_log.setGeometry(QtCore.QRect(10, 70, 971, 271))
+        self.plainTextEdit_log.setObjectName("plainTextEdit_log")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_pic.clicked.connect(MainWindow.slot_pic)
+        self.pushButton_box.clicked.connect(MainWindow.slot_box)
+        self.pushButton_paper.clicked.connect(MainWindow.slot_paper)
+        self.pushButton_lot.clicked.connect(MainWindow.slot_lot)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.groupBox.setTitle(_translate("MainWindow", "拍照"))
+        self.pushButton_pic.setText(_translate("MainWindow", "裸片拍照"))
+        self.pushButton_box.setText(_translate("MainWindow", "紙盒拍照"))
+        self.pushButton_paper.setText(_translate("MainWindow", "說明書拍照"))
+        self.groupBox_2.setTitle(_translate("MainWindow", "資訊比對"))
+        self.pushButton_lot.setText(_translate("MainWindow", "LOT比對"))
+
